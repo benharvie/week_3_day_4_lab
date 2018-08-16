@@ -32,14 +32,14 @@ star3.save
 
 ###
 
-# casting1 = Casting.new({'movie_id' => movie1.id, 'star_id' => star1.id, 'fee' => '20'})
-# casting1.save
-#
-# casting2 = Casting.new({'movie_id' => movie2.id, 'star_id' => star2.id, 'fee' => '20'})
-# casting2.save
-#
-# casting3 = Casting.new({'movie_id' => movie3.id, 'star_id' => star3.id, 'fee' => '20'})
-# casting3.save
+casting1 = Casting.new({'movie_id' => movie1.id, 'star_id' => star1.id, 'fee' => '20'})
+casting1.save
+
+casting2 = Casting.new({'movie_id' => movie2.id, 'star_id' => star2.id, 'fee' => '20'})
+casting2.save
+
+casting3 = Casting.new({'movie_id' => movie3.id, 'star_id' => star3.id, 'fee' => '20'})
+casting3.save
 
 binding.pry
 nil

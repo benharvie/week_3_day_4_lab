@@ -1,4 +1,4 @@
-require_relative('../db/sql_runner.rb')
+require_relative('../db/sql_runner')
 
 class Casting
   attr_reader :id
@@ -6,8 +6,8 @@ class Casting
 
   def initialize(options)
     @id = options['id'].to_i if options['id']
-    @movie_id = options['movie_id']
-    @star_id = options['star_id']
+    @movie_id = options['movie_id'].to_i if options['movie_id']
+    @star_id = options['star_id'].to_i if options['star_id']
     @fee = options['fee']
   end
 
