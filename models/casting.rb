@@ -22,7 +22,12 @@ class Casting
   end
 
   def update
-
+    sql = "UPDATE castings SET fee
+    = $1
+    WHERE
+    id = $2"
+    values = [@fee, @id]
+    SqlRunner.run(sql, values)
   end
 
   def delete
